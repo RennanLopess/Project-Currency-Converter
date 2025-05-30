@@ -8,8 +8,43 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    
-    
+        <main>
+
+            <h1>Conversor de Moerdas</h1>
+            <form id="currency-form">
+
+                <div class="input-group">
+                    <label for="">Valor</label>
+                    <input type="number" id="amount" placeholder="Insira um valor">
+                </div>
+
+                <div class="input-group">
+                    <label>De:</label>
+                    <select id="daMoeda">
+                        <option value="BRL">Real (BRL)</option>
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Para:</label>
+                    <select id="daMoeda">
+                        <option value="BRL">Real (BRL)</option>
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                    </select>
+                </div>
+
+                <button type="submit">Converter</button>
+                <button type="reset">Limpar</button>
+
+            </form>
+
+            <div id="conversao"></div>
+
+        </main>
+
 
     <script src='script.js'></script>
 </body>
